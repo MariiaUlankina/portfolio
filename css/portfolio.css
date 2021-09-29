@@ -1,0 +1,62 @@
+.portfolio__row{
+    display: grid;
+    grid-template-columns: 349px 1fr;
+    gap:125px;
+    align-content: space-between;
+}
+
+.portfolio__content{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.portfolio__images{
+    display: grid;
+    grid-template:"ships bridge" 145px
+                  "river building" 235px / 350px 255px;
+    gap:30px;
+    padding-top: 66px;
+}
+
+.portfolio__images-ships{
+    grid-area: ships;
+}
+
+.portfolio__images-river{
+    grid-area:river;
+}
+
+.portfolio__images-building{
+    grid-area: building;
+    align-self: end;
+}
+
+.portfolio__images-bridge{
+    grid-area: bridge;
+}
+
+.portfolio__title{
+    margin-bottom: 86px;
+}
+
+.portfolio__content--title{
+    font-size: 1.8rem;
+    line-height: 1.39;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.portfolio__text{
+    flex-grow: 1;
+}
+
+.portfolio__images img{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio__buttons-item--right{
+    transform: rotate(180deg);
+    margin-left: 14px;
+}
