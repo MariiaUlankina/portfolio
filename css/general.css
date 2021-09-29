@@ -13,3 +13,16 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.title{
+    font-size: 2.4rem;
+    line-height: 1.21;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 1.8rem;
+    line-height: 1.66;
+    font-weight: 400;
+    color: #333333;
+}
