@@ -28,3 +28,10 @@ body{
     color: #333333;
 }
 
+.to-top{
+    position: fixed;
+    bottom: 70px;
+    right: 170px;
+    transform: rotate(90deg);
+}
+
