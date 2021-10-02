@@ -11,15 +11,15 @@
 }
 
 .portfolio__content{
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
 }
 
 .portfolio__images{
     display: grid;
     grid-template:"ships bridge" 145px
-                  "river building" 235px / 350px 255px;
+                  "river bridge" 233px
+                  "river building" auto / 350px 255px auto;
     gap:30px;
     padding-top: 66px;
 }
@@ -34,6 +34,7 @@
 
 .portfolio__images-building{
     grid-area: building;
+    grid-row: 2 / 3;
     align-self: end;
 }
 
@@ -49,7 +50,6 @@
     font-size: 1.8rem;
     line-height: 1.39;
     font-weight: 600;
-    margin-bottom: 48px;
 }
 
 .portfolio__text{
@@ -58,7 +58,6 @@
 
 .portfolio__images img{
     width: 100%;
-    height: auto;
 }
 
 .portfolio__buttons-item--right{
