@@ -14,11 +14,33 @@ body{
     margin-right: auto;
 }
 
+@media (max-width:1200px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        width: 100%;
+    }
+}
+
 .title{
     font-size: 2.4rem;
     line-height: 1.21;
     font-weight: 700;
     color: #333333;
+}
+
+
+@media  (max-width:767px){
+    .title{
+        font-size: 2.4rem;
+        line-height: 1.21;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 .text{
@@ -28,10 +50,31 @@ body{
     color: #333333;
 }
 
+@media  (max-width:767px){
+    .text{
+        font-size: 1.2rem;
+        line-height: 1.25;
+        font-weight: 400;
+        padding: 0 30px;
+    }
+}
+
+
+
 .to-top{
     position: fixed;
     bottom: 70px;
     right: 170px;
     transform: rotate(90deg);
+}
+
+@media  (max-width:767px){
+    .to-top{
+    position: fixed;
+    bottom: 58px;
+    right: 32px;
+    transform: rotate(90deg);
+}
+
 }
 
